@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controllo Meteo</title>
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controllo Meteo</h1>
+        <p>Inserisci il nome della città per conoscere le condizioni meteo attuali.</p>
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Inserisci il nome della città" required>
+            <button type="submit">Cerca</button>
+        </form>
+        <div id="weatherResult" class="hidden">
+            <h2>Risultati Meteo</h2>
+            <p><strong>Città:</strong> <span id="cityName"></span></p>
+            <p><strong>Temperatura:</strong> <span id="temperature"></span>°C</p>
+            <p><strong>Condizioni:</strong> <span id="weatherCondition"></span></p>
+            <p><strong>Umidità:</strong> <span id="humidity"></span>%</p>
+        </div>
+    </div>
+    <script src="hello.js"></script>
+</body>
+</html>
